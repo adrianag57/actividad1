@@ -11,7 +11,7 @@ var num = prompt("Introduce un número");
         }
         else {
 
-            console.error("El número no es entero"); 
+            console.error("El número no es entero");
         }
 
         return result;

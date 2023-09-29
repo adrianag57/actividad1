@@ -1,20 +1,25 @@
+//creamos el array numeros
 var numeros = [];
 
-    function ordenCreciente() {
+//creamos un for que pida 4 numeros enteros positivos
+for (var i = 0; i < 4; i++) {
 
-        for(var i = 0; i < 4; i++) {
+    //pedimos un numero entero positivo
+    var num = prompt("Introduce un número entero positivo");
 
-            var num = prompt("Introduce un número");
+    /*
+        creamos un if que nos avise si el número que introducimos no es entero positivo
+        y que nos meta el número en el array si lo es
+    */
+    if(parseInt(num) != num || num < 0) {
 
-            if (parseInt(num) == num) {
-
-                numeros += num;
-            }
-            else {
-    
-                console.error("El número no es entero"); 
-            }
-        }
+        // ccreamos un aviso en la consola de que el número no es entero positivo
+        console.log("El número no es entero positivo");
+        //ponemos en pantalla que hay un error y debes introducir otro numero
+        num = parseInt(prompt("Error. Introduce un número entero positivo"));
     }
+    else {
 
-ordenCreciente();
+        numeros[i] = num;
+    }
+}
