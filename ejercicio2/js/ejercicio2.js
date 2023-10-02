@@ -2,10 +2,10 @@
 var numeros = [];
 
     //creamos un for que pida 4 numeros enteros positivos
-    for (var i = 0; i < 4; i++) {
+    for (let i = 0; i < 4; i++) {
 
         //pedimos un numero entero positivo
-        var num = prompt("Introduce un número entero positivo");
+        let num = prompt("Introduce un número entero positivo");
 
         /*
             creamos un if que nos avise si el número que introducimos no es entero positivo
@@ -27,5 +27,13 @@ var numeros = [];
 
     function ordenCreciente() {
 
+        let resultado = false;
 
+        if (numeros[0] < numeros[1] && numeros[1] < numeros[2] && numeros[2] < numeros[3]) {
+
+            let resultado = true;
+            return resultado
+        }
     }
+
+    alert(ordenCreciente());
