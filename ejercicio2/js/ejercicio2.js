@@ -25,15 +25,18 @@ var numeros = [];
         
     }
 
+    //creames la funcion ordeCreciente
     function ordenCreciente() {
 
         let resultado = false;
 
+        //hacemos un if para que si los numeros van en orden creciente nos devuelva true
         if (numeros[0] < numeros[1] && numeros[1] < numeros[2] && numeros[2] < numeros[3]) {
 
             let resultado = true;
-            return resultado
         }
+        
+        return resultado
     }
 
     alert(ordenCreciente());
