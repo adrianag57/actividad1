@@ -21,7 +21,7 @@ const CONTRASENAS = ["12345", "23456", "09876", "67890", "66666"];
 
             for (var i = 0; i < USUARIOS.length, i++;) {
 
-                if (password == USUARIOS[i] == login == USUARIOS[i]) {
+                if (password == CONTRASENAS[i] && login == USUARIOS[i]) {
 
                     resultado = true;
                 }
