@@ -4,7 +4,7 @@ const CONTRASENAS = ["12345", "23456", "09876", "67890", "66666"];
     function existeLogin(login) {
 
         let resultado = false;
-        for (i = 0; i < USUARIOS.length; i++) {
+        for (var i = 0; i < USUARIOS.length; i++) {
 
             if (login == USUARIOS[i]) {
 
@@ -17,9 +17,9 @@ const CONTRASENAS = ["12345", "23456", "09876", "67890", "66666"];
 
         function passwordCorrecto(password, login) {
 
-            let resultado = false;
+            var resultado = false;
 
-            for (var i = 0; i < USUARIOS.length, i++;) {
+            for (let i = 0; i < USUARIOS.length, i++;) {
 
                 if (password == CONTRASENAS[i] && login == USUARIOS[i]) {
 
@@ -44,7 +44,7 @@ const CONTRASENAS = ["12345", "23456", "09876", "67890", "66666"];
                 } else if (existeLogin(login) == false) {
 
                     window.alert("Error. Usuario inexistente");
-                } else if (existeLogin(login) == true && passwordCorrecto(login, password) == false) {
+                } else if (existeLogin(login) == true && passwordCorrecto(password, login) == false) {
 
                     window.alert("Error. Contraseña incorrecta");
                 } else {
